@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark">
+<title>Rifle Calcs · Bit Science Games</title>
+<meta name="description" content="A ballistics calculator that solves your shot as you type, shows the hit or miss on true-size steel, and lets you watch the bullet fly.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Bit Science Games">
+<meta property="og:title" content="Rifle Calcs · Bit Science Games">
+<meta property="og:description" content="A ballistics calculator that solves your shot as you type, shows the hit or miss on true-size steel, and lets you watch the bullet fly.">
+<meta property="og:image" content="https://jaredjudd.com/images/rifle-calcs/social.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://jaredjudd.com/rifle-calcs/">
+<link rel="icon" href="/images/icon.png">
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="stylesheet" href="/assets/site.css">
+</head>
+<body class="app">
+<header class="top"><div class="wrap">
+<a class="brand" href="/" aria-label="Bit Science Games home"><svg xmlns="http://www.w3.org/2000/svg" viewBox="40.880 84.500 53.350 98.590" width="20.6" height="38"><g transform="matrix(1 0 0 -1 0 280)">
+  <defs>
+    <radialGradient id="hl" gradientUnits="userSpaceOnUse" cx="53.11" cy="130.71" r="22.28">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.38"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="hl2" gradientUnits="userSpaceOnUse" cx="53.39" cy="133.42" r="8.12">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <g id="pixels">
+    <path fill="#F97A2B" d="M67 188 h-7 v7 h7 Z"/>
+    <path fill="#9ACE51" d="M75 180 h-6 v6 h6 Z"/>
+    <path fill="#04BAF4" d="M65 178 h-4 v4 h4 Z"/>
+    <path fill="#F8A621" d="M70 173 h-3 v3 h3 Z"/>
+  </g>
+  <g id="flask" fill="#9ACE51">
+    <circle cx="67.556" cy="123.585" r="26.174"/>
+    <rect x="58.675" y="123.585" width="17.762" height="38.345"/>
+    <rect x="55.17" y="161.93" width="24.772" height="6.434" rx="3.217"/>
+  </g>
+  <g id="shade" style="mix-blend-mode:multiply">
+    <path transform="matrix(1 0 0 1 76.4366 148.2107)" fill="#C6C6C6" d="M0 0 L0 13.719 L-3.856 13.719 L-3.851 -0.618 C-3.851 -0.761 -3.791 -0.892 -3.684 -0.987 C-2.733 -1.834 1.97 -6.749 1.97 -21.1 C1.97 -34.096 -6.38 -45.135 -18.005 -49.163 C-14.282 -50.549 -10.16 -51.115 -5.854 -50.63 C6.748 -49.209 16.641 -38.611 17.262 -25.944 C17.845 -14.041 10.473 -3.777 0 0"/>
+    <path transform="matrix(1 0 0 1 76.4366 161.9298)" fill="#DADADA" d="M0 0 L-3.856 0 L-3.856 -1.788 L0 -1.788 Z"/>
+    <path transform="matrix(1 0 0 1 76.7251 168.364)" fill="#C6C6C6" d="M0 0 L-5.236 0 C-4.99 -0.794 -4.857 -1.639 -4.857 -2.514 C-4.857 -3.929 -5.208 -5.261 -5.822 -6.434 L-5.821 -6.434 L-0.289 -6.434 L-0.095 -6.434 C1.306 -6.434 2.635 -5.591 3.055 -4.255 C3.751 -2.038 2.113 0 0 0"/>
+  </g>
+  <circle cx="67.556" cy="123.585" r="26.174" fill="url(#hl)"/>
+  <circle cx="67.556" cy="123.585" r="26.174" fill="url(#hl2)"/>
+  </g></svg>
+<span class="brand-name"><svg xmlns="http://www.w3.org/2000/svg" viewBox="106.520 134.270 202.600 31.480" width="135.2" height="21"><g transform="matrix(1 0 0 -1 0 280)">
+  <path transform="matrix(1 0 0 1 303.5418 128.4114)" fill="#FFFFFF" d="M0 0 C-0.341 2.725 -2.469 4.087 -5.449 4.087 C-8.259 4.087 -10.558 2.725 -11.324 0 Z M-11.409 -4.3 C-11.069 -6.897 -8.812 -8.769 -5.152 -8.769 C-3.236 -8.769 -0.724 -8.047 0.468 -6.811 L3.788 -10.09 C1.575 -12.388 -2.043 -13.496 -5.236 -13.496 C-12.473 -13.496 -16.773 -9.025 -16.773 -2.299 C-16.773 4.087 -12.432 8.685 -5.62 8.685 C1.405 8.685 5.789 4.342 4.981 -4.3 Z M-17.348 -10.26 C-19.774 -12.643 -22.328 -13.58 -25.436 -13.58 C-31.523 -13.58 -36.59 -9.919 -36.59 -2.469 C-36.59 4.981 -31.523 8.642 -25.436 8.642 C-22.456 8.642 -20.157 7.791 -17.859 5.535 L-21.136 2.086 C-22.371 3.193 -23.904 3.746 -25.351 3.746 C-28.841 3.746 -31.396 1.192 -31.396 -2.469 C-31.396 -6.47 -28.672 -8.599 -25.436 -8.599 C-23.775 -8.599 -22.116 -8.131 -20.838 -6.854 Z M-44.883 -12.942 L-44.883 -1.958 C-44.883 1.235 -46.628 3.661 -49.948 3.661 C-53.141 3.661 -55.313 0.98 -55.313 -2.213 L-55.313 -12.942 L-60.464 -12.942 L-60.464 8.088 L-55.823 8.088 L-55.483 5.236 C-53.354 7.323 -51.226 8.386 -48.586 8.386 C-43.648 8.386 -39.688 4.682 -39.688 -1.916 L-39.688 -12.942 Z M-68.915 0 C-69.256 2.725 -71.384 4.087 -74.364 4.087 C-77.174 4.087 -79.473 2.725 -80.239 0 Z M-80.325 -4.3 C-79.983 -6.897 -77.727 -8.769 -74.067 -8.769 C-72.151 -8.769 -69.639 -8.047 -68.447 -6.811 L-65.127 -10.09 C-67.34 -12.388 -70.959 -13.496 -74.151 -13.496 C-81.388 -13.496 -85.688 -9.025 -85.688 -2.299 C-85.688 4.087 -81.346 8.685 -74.534 8.685 C-67.51 8.685 -63.126 4.342 -63.934 -4.3 Z M-94.256 -12.942 h5.195 v21.073 h-5.195 Z M-94.256 8.131 M-96.452 -10.26 C-98.878 -12.643 -101.433 -13.58 -104.54 -13.58 C-110.628 -13.58 -115.694 -9.919 -115.694 -2.469 C-115.694 4.981 -110.628 8.642 -104.54 8.642 C-101.56 8.642 -99.261 7.791 -96.962 5.535 L-100.24 2.086 C-101.475 3.193 -103.008 3.746 -104.455 3.746 C-107.946 3.746 -110.5 1.192 -110.5 -2.469 C-110.5 -6.47 -107.776 -8.599 -104.54 -8.599 C-102.88 -8.599 -101.22 -8.131 -99.943 -6.854 Z M-121.526 2.469 C-123.016 3.874 -124.719 4.342 -126.72 4.342 C-129.189 4.342 -130.551 3.576 -130.551 2.256 C-130.551 0.894 -129.317 0.127 -126.635 -0.043 C-122.676 -0.298 -117.652 -1.192 -117.652 -6.769 C-117.652 -10.473 -120.675 -13.666 -126.677 -13.666 C-129.998 -13.666 -133.318 -13.112 -136.384 -9.919 L-133.829 -6.216 C-132.339 -7.875 -128.933 -9.11 -126.592 -9.153 C-124.634 -9.195 -122.803 -8.174 -122.803 -6.641 C-122.803 -5.194 -123.995 -4.598 -126.975 -4.428 C-130.934 -4.13 -135.66 -2.682 -135.66 2.086 C-135.66 6.939 -130.637 8.642 -126.805 8.642 C-123.527 8.642 -121.058 8.004 -118.631 5.875 Z M-153.501 13.964 L-153.501 8.004 L-147.712 8.004 L-147.712 3.533 L-153.544 3.533 L-153.544 -5.535 C-153.544 -7.535 -152.437 -8.515 -150.819 -8.515 C-150.01 -8.515 -149.074 -8.259 -148.307 -7.875 L-146.86 -12.303 C-148.35 -12.899 -149.585 -13.154 -151.16 -13.197 C-155.715 -13.367 -158.695 -10.771 -158.695 -5.535 L-158.695 3.533 L-162.611 3.533 L-162.611 8.004 L-158.695 8.004 L-158.695 13.41 Z M-170.263 -12.942 h5.194 v21.073 h-5.194 Z M-170.263 8.131 M-190.988 -2.426 C-190.988 -6.216 -188.178 -8.599 -184.9 -8.599 C-181.58 -8.599 -178.94 -6.087 -178.94 -2.426 C-178.94 1.362 -181.58 3.704 -184.9 3.704 C-188.178 3.704 -190.988 1.235 -190.988 -2.426 M-191.329 16.816 L-191.329 5.194 C-190.094 7.365 -186.646 8.556 -184.432 8.556 C-178.302 8.556 -173.747 4.811 -173.747 -2.426 C-173.747 -9.323 -178.387 -13.41 -184.559 -13.41 C-187.114 -13.41 -189.711 -12.559 -191.329 -10.047 L-191.669 -12.942 L-196.522 -12.942 L-196.522 16.816 Z"/>
+  <path transform="matrix(1 0 0 1 138.4726 142.375)" fill="#04BAF4" d="M0 0 C0 -1.435 -1.163 -2.597 -2.597 -2.597 C-4.032 -2.597 -5.195 -1.435 -5.195 0 C-5.195 1.434 -4.032 2.597 -2.597 2.597 C-1.163 2.597 0 1.434 0 0"/>
+  <path transform="matrix(1 0 0 1 214.481 142.375)" fill="#F8A621" d="M0 0 C0 -1.435 -1.163 -2.597 -2.597 -2.597 C-4.032 -2.597 -5.195 -1.435 -5.195 0 C-5.195 1.434 -4.032 2.597 -2.597 2.597 C-1.163 2.597 0 1.434 0 0"/></g></svg><span class="games">GAMES</span></span></a>
+<nav><a href="/#apps">Apps</a><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a></nav>
+</div></header>
+<main>
+
+<section class="hero app-hero"><div class="wrap grid">
+<div class="text">
+<div class="app-lockup"><svg xmlns="http://www.w3.org/2000/svg" viewBox="40.880 84.500 53.350 98.590" width="51.9" height="96"><g transform="matrix(1 0 0 -1 0 280)">
+  <defs>
+    <radialGradient id="hl" gradientUnits="userSpaceOnUse" cx="53.11" cy="130.71" r="22.28">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.38"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="hl2" gradientUnits="userSpaceOnUse" cx="53.39" cy="133.42" r="8.12">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <g id="pixels">
+    <path fill="#F97A2B" d="M67 188 h-7 v7 h7 Z"/>
+    <path fill="#9ACE51" d="M75 180 h-6 v6 h6 Z"/>
+    <path fill="#04BAF4" d="M65 178 h-4 v4 h4 Z"/>
+    <path fill="#F8A621" d="M70 173 h-3 v3 h3 Z"/>
+  </g>
+  <g id="flask" fill="#9ACE51">
+    <circle cx="67.556" cy="123.585" r="26.174"/>
+    <rect x="58.675" y="123.585" width="17.762" height="38.345"/>
+    <rect x="55.17" y="161.93" width="24.772" height="6.434" rx="3.217"/>
+  </g>
+  <g id="shade" style="mix-blend-mode:multiply">
+    <path transform="matrix(1 0 0 1 76.4366 148.2107)" fill="#C6C6C6" d="M0 0 L0 13.719 L-3.856 13.719 L-3.851 -0.618 C-3.851 -0.761 -3.791 -0.892 -3.684 -0.987 C-2.733 -1.834 1.97 -6.749 1.97 -21.1 C1.97 -34.096 -6.38 -45.135 -18.005 -49.163 C-14.282 -50.549 -10.16 -51.115 -5.854 -50.63 C6.748 -49.209 16.641 -38.611 17.262 -25.944 C17.845 -14.041 10.473 -3.777 0 0"/>
+    <path transform="matrix(1 0 0 1 76.4366 161.9298)" fill="#DADADA" d="M0 0 L-3.856 0 L-3.856 -1.788 L0 -1.788 Z"/>
+    <path transform="matrix(1 0 0 1 76.7251 168.364)" fill="#C6C6C6" d="M0 0 L-5.236 0 C-4.99 -0.794 -4.857 -1.639 -4.857 -2.514 C-4.857 -3.929 -5.208 -5.261 -5.822 -6.434 L-5.821 -6.434 L-0.289 -6.434 L-0.095 -6.434 C1.306 -6.434 2.635 -5.591 3.055 -4.255 C3.751 -2.038 2.113 0 0 0"/>
+  </g>
+  <circle cx="67.556" cy="123.585" r="26.174" fill="url(#hl)"/>
+  <circle cx="67.556" cy="123.585" r="26.174" fill="url(#hl2)"/>
+  <g id="scope">
+    <circle cx="67.556" cy="123.585" r="20.677" fill="#24282B"/>
+    <g stroke="#FFFFFF" fill="none">
+      <path stroke-width="0.85" d="M46.879 123.585H88.233M67.556 102.908V144.262"/>
+      <path stroke-width="2.6" d="M46.879 123.585H56.183M78.929 123.585H88.233M67.556 102.908V112.212M67.556 134.958V144.262"/>
+      <path stroke-width="1.3" stroke-opacity="0.22" stroke-linecap="round" d="M60.565 138.577 A16.542 16.542 0 0 1 52.219 129.782"/>
+    </g>
+    <g fill="#FFFFFF">
+      <circle cx="60.939" cy="123.585" r="0.85"/><circle cx="74.173" cy="123.585" r="0.85"/>
+      <circle cx="67.556" cy="116.968" r="0.85"/><circle cx="67.556" cy="130.202" r="0.85"/>
+    </g>
+    <circle cx="73.759" cy="115.314" r="2.1" fill="#F97A2B"/>
+  </g></g></svg><div><h1>Rifle Calcs</h1>
+<p class="tag">Ballistic calculations</p></div></div>
+<p>Rifle Calcs solves your shot as you type. Change the distance, the wind or a click on the turret, and the solution, the reticle and the hit or miss update at once. There is no calculate button.</p>
+<span class="store soon">Coming soon to the App Store</span>
+<p class="jump"><a href="#support">Support</a> · <a href="/privacy/#rifle-calcs">Privacy</a></p>
+</div>
+<div class="art"><img src="/images/rifle-calcs/phones/01-solution-green.png" alt="Rifle Calcs on iPhone"></div>
+</div></section>
+<section class="feature"><div class="wrap grid"><div class="text"><h2 id="see-the-hit-before-you-send-it">See the hit before you send it</h2><p>Pick your steel (gongs, rectangles, PRS plates or a custom size) and Rifle Calcs draws it on the reticle at the size it really appears at that distance, with a clear hit or miss.</p><p>Turn the elevation and windage turrets click by click, or dial straight to the solution. The reticle shows where the shot lands with what you have dialled, so you can see the miss you are chasing as well as the fix.</p></div><div class="art"><div class="phones n1"><img src="/images/rifle-calcs/phones/01-solution-blue.png" alt="A 500 yard hit on a 20 inch gong, dialled to the solution" loading="lazy"></div></div></div></section><section class="feature flip"><div class="wrap grid"><div class="text"><h2 id="watch-the-bullet-fly">Watch the bullet fly</h2><p>Drag the bullet from muzzle to target. Drop, drift, spin, speed and energy read out at every point, the zero crossing shows up close, and an uphill or downhill shot is drawn at its true angle.</p></div><div class="art"><div class="phones n1"><img src="/images/rifle-calcs/phones/02-flight-side-green.png" alt="The flight from the side, with a close-up of the zero at 100 yards" loading="lazy"></div></div></div></section><section class="feature"><div class="wrap grid"><div class="text"><h2 id="from-above-and-through-the-glass">From above, and through the glass</h2><p>See the wind push the bullet off line and back onto the plate from above, then follow the same flight across the reticle.</p></div><div class="art"><div class="phones n2"><img src="/images/rifle-calcs/phones/03-flight-top-blue.png" alt="The flight from above, drifting with the wind" loading="lazy"><img src="/images/rifle-calcs/phones/04-flight-scope-blue.png" alt="The flight traced through the scope" loading="lazy"></div></div></div></section><section class="feature flip"><div class="wrap grid"><div class="text"><h2 id="your-dope-card-calculated-live">Your dope card, calculated live</h2><p>A full trajectory table for the current conditions, with the transonic and subsonic ranges marked. Tap any row to make it the shot.</p></div><div class="art"><div class="phones n1"><img src="/images/rifle-calcs/phones/05-trajectory-green.png" alt="The trajectory table, with the subsonic ranges marked" loading="lazy"></div></div></div></section><section class="plain"><div class="wrap narrow"><h2 id="built-for-the-way-you-shoot">Built for the way you shoot</h2><ul><li><strong>Profiles:</strong> rifle, bullet and scope saved together. Switch between a .308 in MIL and a .223 in MOA with one tap.</li><li><strong>A real solver:</strong> a point-mass model that includes spin drift and Coriolis, solved in under a millisecond.</li><li><strong>Measured drag curves:</strong> enter a bullet's own Doppler drag data when a ballistic coefficient is not enough.</li><li><strong>Conditions from your phone:</strong> current weather for where you are, look angle from the phone's tilt, and direction from its compass.</li><li><strong>Imperial or metric:</strong> switch at any time without losing a value.</li><li><strong>Light or dark, in your colour:</strong> the keys glow in the backlight colour you choose.</li></ul></div></section><section class="plain lcd"><div class="wrap narrow"><h2 id="private-by-design">Private by design</h2><p>No account, no ads and no tracking. Your rifles and loads stay on your phone. The app goes online only when you ask for the weather or open the map. The <a href="/privacy/">Privacy Policy</a> has the details.</p></div></section><section class="support"><div class="wrap narrow"><h2 id="support">Support</h2><p>Questions, bug reports and feature requests: <a href="mailto:support@jaredjudd.com">support@jaredjudd.com</a>. It helps to include your device, its iOS version, and the profile you were using: rifle, bullet, scope, muzzle velocity and zero.</p><h3 id="do-i-need-an-account">Do I need an account?</h3><p>No. There is no sign-in. Everything you enter stays on your device.</p><h3 id="does-it-work-without-a-signal">Does it work without a signal?</h3><p>Yes. Every calculation runs on your phone. The internet is needed only to fetch the current weather or to show the map, and you can always enter conditions by hand.</p><h3 id="where-do-the-weather-numbers-come-from">Where do the weather numbers come from?</h3><p>From Open-Meteo, a weather model's current analysis for your position, updated every 15 minutes. It is a good starting point, but it is not a reading where you stand. For the best results, use station pressure from a local barometer or weather meter.</p><h3 id="why-does-my-rifle-not-match-the-app-exactly">Why does my rifle not match the app exactly?</h3><p>A calculator predicts; your rifle confirms. Muzzle velocity, ballistic coefficient and sight height have the largest effect, so measure them where you can. Then shoot at distance, and true the profile to what you see on paper or steel.</p><h3 id="how-do-i-move-my-data-to-a-new-phone">How do I move my data to a new phone?</h3><p>Your profiles go with your device backup. Restoring a backup to the new phone restores Rifle Calcs with them.</p><h3 id="how-do-i-delete-my-data">How do I delete my data?</h3><p>Delete the app. Rifle Calcs keeps nothing anywhere else.</p><h3 id="is-it-safe-to-rely-on">Is it safe to rely on?</h3><p>Rifle Calcs is a calculator, not a substitute for safe handling or confirmed data. Always know your target and what is beyond it, and confirm every solution at the range before you rely on it. See the <a href="/terms/">Terms of Use</a>.</p></div></section>
+<p class="credit wrap narrow">Weather data by <a href="https://open-meteo.com" rel="noopener">Open-Meteo.com</a>, licensed <a href="https://creativecommons.org/licenses/by/4.0/" rel="noopener">CC BY 4.0</a>.</p>
+</main>
+<footer class="bottom"><div class="wrap">
+<div><svg xmlns="http://www.w3.org/2000/svg" viewBox="106.520 134.270 202.600 31.480" width="115.8" height="18"><g transform="matrix(1 0 0 -1 0 280)">
+  <path transform="matrix(1 0 0 1 303.5418 128.4114)" fill="#FFFFFF" d="M0 0 C-0.341 2.725 -2.469 4.087 -5.449 4.087 C-8.259 4.087 -10.558 2.725 -11.324 0 Z M-11.409 -4.3 C-11.069 -6.897 -8.812 -8.769 -5.152 -8.769 C-3.236 -8.769 -0.724 -8.047 0.468 -6.811 L3.788 -10.09 C1.575 -12.388 -2.043 -13.496 -5.236 -13.496 C-12.473 -13.496 -16.773 -9.025 -16.773 -2.299 C-16.773 4.087 -12.432 8.685 -5.62 8.685 C1.405 8.685 5.789 4.342 4.981 -4.3 Z M-17.348 -10.26 C-19.774 -12.643 -22.328 -13.58 -25.436 -13.58 C-31.523 -13.58 -36.59 -9.919 -36.59 -2.469 C-36.59 4.981 -31.523 8.642 -25.436 8.642 C-22.456 8.642 -20.157 7.791 -17.859 5.535 L-21.136 2.086 C-22.371 3.193 -23.904 3.746 -25.351 3.746 C-28.841 3.746 -31.396 1.192 -31.396 -2.469 C-31.396 -6.47 -28.672 -8.599 -25.436 -8.599 C-23.775 -8.599 -22.116 -8.131 -20.838 -6.854 Z M-44.883 -12.942 L-44.883 -1.958 C-44.883 1.235 -46.628 3.661 -49.948 3.661 C-53.141 3.661 -55.313 0.98 -55.313 -2.213 L-55.313 -12.942 L-60.464 -12.942 L-60.464 8.088 L-55.823 8.088 L-55.483 5.236 C-53.354 7.323 -51.226 8.386 -48.586 8.386 C-43.648 8.386 -39.688 4.682 -39.688 -1.916 L-39.688 -12.942 Z M-68.915 0 C-69.256 2.725 -71.384 4.087 -74.364 4.087 C-77.174 4.087 -79.473 2.725 -80.239 0 Z M-80.325 -4.3 C-79.983 -6.897 -77.727 -8.769 -74.067 -8.769 C-72.151 -8.769 -69.639 -8.047 -68.447 -6.811 L-65.127 -10.09 C-67.34 -12.388 -70.959 -13.496 -74.151 -13.496 C-81.388 -13.496 -85.688 -9.025 -85.688 -2.299 C-85.688 4.087 -81.346 8.685 -74.534 8.685 C-67.51 8.685 -63.126 4.342 -63.934 -4.3 Z M-94.256 -12.942 h5.195 v21.073 h-5.195 Z M-94.256 8.131 M-96.452 -10.26 C-98.878 -12.643 -101.433 -13.58 -104.54 -13.58 C-110.628 -13.58 -115.694 -9.919 -115.694 -2.469 C-115.694 4.981 -110.628 8.642 -104.54 8.642 C-101.56 8.642 -99.261 7.791 -96.962 5.535 L-100.24 2.086 C-101.475 3.193 -103.008 3.746 -104.455 3.746 C-107.946 3.746 -110.5 1.192 -110.5 -2.469 C-110.5 -6.47 -107.776 -8.599 -104.54 -8.599 C-102.88 -8.599 -101.22 -8.131 -99.943 -6.854 Z M-121.526 2.469 C-123.016 3.874 -124.719 4.342 -126.72 4.342 C-129.189 4.342 -130.551 3.576 -130.551 2.256 C-130.551 0.894 -129.317 0.127 -126.635 -0.043 C-122.676 -0.298 -117.652 -1.192 -117.652 -6.769 C-117.652 -10.473 -120.675 -13.666 -126.677 -13.666 C-129.998 -13.666 -133.318 -13.112 -136.384 -9.919 L-133.829 -6.216 C-132.339 -7.875 -128.933 -9.11 -126.592 -9.153 C-124.634 -9.195 -122.803 -8.174 -122.803 -6.641 C-122.803 -5.194 -123.995 -4.598 -126.975 -4.428 C-130.934 -4.13 -135.66 -2.682 -135.66 2.086 C-135.66 6.939 -130.637 8.642 -126.805 8.642 C-123.527 8.642 -121.058 8.004 -118.631 5.875 Z M-153.501 13.964 L-153.501 8.004 L-147.712 8.004 L-147.712 3.533 L-153.544 3.533 L-153.544 -5.535 C-153.544 -7.535 -152.437 -8.515 -150.819 -8.515 C-150.01 -8.515 -149.074 -8.259 -148.307 -7.875 L-146.86 -12.303 C-148.35 -12.899 -149.585 -13.154 -151.16 -13.197 C-155.715 -13.367 -158.695 -10.771 -158.695 -5.535 L-158.695 3.533 L-162.611 3.533 L-162.611 8.004 L-158.695 8.004 L-158.695 13.41 Z M-170.263 -12.942 h5.194 v21.073 h-5.194 Z M-170.263 8.131 M-190.988 -2.426 C-190.988 -6.216 -188.178 -8.599 -184.9 -8.599 C-181.58 -8.599 -178.94 -6.087 -178.94 -2.426 C-178.94 1.362 -181.58 3.704 -184.9 3.704 C-188.178 3.704 -190.988 1.235 -190.988 -2.426 M-191.329 16.816 L-191.329 5.194 C-190.094 7.365 -186.646 8.556 -184.432 8.556 C-178.302 8.556 -173.747 4.811 -173.747 -2.426 C-173.747 -9.323 -178.387 -13.41 -184.559 -13.41 C-187.114 -13.41 -189.711 -12.559 -191.329 -10.047 L-191.669 -12.942 L-196.522 -12.942 L-196.522 16.816 Z"/>
+  <path transform="matrix(1 0 0 1 138.4726 142.375)" fill="#04BAF4" d="M0 0 C0 -1.435 -1.163 -2.597 -2.597 -2.597 C-4.032 -2.597 -5.195 -1.435 -5.195 0 C-5.195 1.434 -4.032 2.597 -2.597 2.597 C-1.163 2.597 0 1.434 0 0"/>
+  <path transform="matrix(1 0 0 1 214.481 142.375)" fill="#F8A621" d="M0 0 C0 -1.435 -1.163 -2.597 -2.597 -2.597 C-4.032 -2.597 -5.195 -1.435 -5.195 0 C-5.195 1.434 -4.032 2.597 -2.597 2.597 C-1.163 2.597 0 1.434 0 0"/></g></svg></div>
+<nav><a href="/#apps">Apps</a><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a>
+<a href="mailto:support@jaredjudd.com">support@jaredjudd.com</a></nav>
+<p class="fine">&copy; 2026 Jamoke Innovations LLC. Apple, iPhone and iPad are trademarks of Apple Inc.</p>
+</div></footer>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="40.880 84.500 53.350 98.590" width="162.34" height="300"><g transform="matrix(1 0 0 -1 0 280)">
+  <defs>
+    <radialGradient id="hl" gradientUnits="userSpaceOnUse" cx="53.11" cy="130.71" r="22.28">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.38"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="hl2" gradientUnits="userSpaceOnUse" cx="53.39" cy="133.42" r="8.12">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <g id="pixels">
+    <path fill="#F97A2B" d="M67 188 h-7 v7 h7 Z"/>
+    <path fill="#9ACE51" d="M75 180 h-6 v6 h6 Z"/>
+    <path fill="#04BAF4" d="M65 178 h-4 v4 h4 Z"/>
+    <path fill="#F8A621" d="M70 173 h-3 v3 h3 Z"/>
+  </g>
+  <g id="flask" fill="#9ACE51">
+    <circle cx="67.556" cy="123.585" r="26.174"/>
+    <rect x="58.675" y="123.585" width="17.762" height="38.345"/>
+    <rect x="55.17" y="161.93" width="24.772" height="6.434" rx="3.217"/>
+  </g>
+  <g id="shade" style="mix-blend-mode:multiply">
+    <path transform="matrix(1 0 0 1 76.4366 148.2107)" fill="#C6C6C6" d="M0 0 L0 13.719 L-3.856 13.719 L-3.851 -0.618 C-3.851 -0.761 -3.791 -0.892 -3.684 -0.987 C-2.733 -1.834 1.97 -6.749 1.97 -21.1 C1.97 -34.096 -6.38 -45.135 -18.005 -49.163 C-14.282 -50.549 -10.16 -51.115 -5.854 -50.63 C6.748 -49.209 16.641 -38.611 17.262 -25.944 C17.845 -14.041 10.473 -3.777 0 0"/>
+    <path transform="matrix(1 0 0 1 76.4366 161.9298)" fill="#DADADA" d="M0 0 L-3.856 0 L-3.856 -1.788 L0 -1.788 Z"/>
+    <path transform="matrix(1 0 0 1 76.7251 168.364)" fill="#C6C6C6" d="M0 0 L-5.236 0 C-4.99 -0.794 -4.857 -1.639 -4.857 -2.514 C-4.857 -3.929 -5.208 -5.261 -5.822 -6.434 L-5.821 -6.434 L-0.289 -6.434 L-0.095 -6.434 C1.306 -6.434 2.635 -5.591 3.055 -4.255 C3.751 -2.038 2.113 0 0 0"/>
+  </g>
+  <circle cx="67.556" cy="123.585" r="26.174" fill="url(#hl)"/>
+  <circle cx="67.556" cy="123.585" r="26.174" fill="url(#hl2)"/>
+  </g></svg>
