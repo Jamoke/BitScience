@@ -6,7 +6,7 @@ icon: icon.png
 mark: rifle-calcs-mark.svg
 hero: 01-solution-green.png
 status: Coming soon to the App Store
-app_store_url:
+app_store_url: https://apps.apple.com/us/app/id6833726699
 play_store_url: https://play.google.com/store/apps/details?id=com.bitscience.ballisticcalcs
 order: 1
 credit: Weather data by [Open-Meteo.com](https://open-meteo.com), licensed [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
