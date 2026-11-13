@@ -4,7 +4,7 @@ description: How Bit Science Games apps and this website handle your information
 ---
 # Privacy Policy
 
-**Effective November 11, 2026**
+**Effective November 12, 2026**
 
 Bit Science Games apps are published by Jamoke Innovations LLC ("we", "us"). This policy covers those apps and this website. The first part applies to every app. Below it, each app has a section describing exactly what that app does, and that section takes precedence where it says more.
 
@@ -44,7 +44,7 @@ If you email us, we use your message and address only to reply to you.
 
 **Weather.** When you ask for current conditions, the app sends the latitude and longitude of your shooting position to Open-Meteo (open-meteo.com), a weather service, over an encrypted connection (HTTPS). The request contains no name, account or device identifier. As with any connection to a website, Open-Meteo also receives your device's IP address. Open-Meteo states in its [terms](https://open-meteo.com/en/terms) that its server logs, which may contain coordinates and IP addresses, are kept for troubleshooting and to prevent misuse, and are deleted after 90 days. Weather data is provided by [Open-Meteo.com](https://open-meteo.com) under the [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) licence.
 
-**Maps.** When you choose your shooting position on a map, the map is Apple Maps, provided by Apple under [Apple's privacy policy](https://www.apple.com/legal/privacy/).
+**Maps.** When you choose your shooting position on a map, the map on iPhone and iPad is Apple Maps, provided by Apple under [Apple's privacy policy](https://www.apple.com/legal/privacy/). On Android, the map is provided by Mapbox (mapbox.com). While the map is open, the app loads Mapbox's map software and map images over an encrypted connection (HTTPS), so Mapbox receives the area of the map being shown, your device's IP address, and usage information that its map software sends to count map loads. Mapbox handles it under the [Mapbox privacy policy](https://www.mapbox.com/legal/privacy).
 
 **Tilt and compass.** The app reads your device's tilt (for the look angle) and compass (for the direction you are facing) when you tap the buttons for them. These readings are used on your device for the calculation and are not sent anywhere or saved.
 
