@@ -87,6 +87,15 @@ hr { border: 0; border-top: 1px solid var(--line); margin: 2.5em 0; }
 .stores { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 8px; }
 .store { display: inline-block; padding: 10px 18px; border-radius: 12px; font-weight: 600;
   background: var(--green); color: #12170E; text-decoration: none; }
+/* Store badges, shown at the same height. Google's PNG has a transparent margin of 41 px around
+   its 564 x 168 badge, so its box is cropped to the badge plus 1 px, which keeps the thin outline
+   whole when the crop falls between screen pixels. */
+.stores { --badge: 48px; align-items: center; }
+.card .stores { --badge: 40px; }
+.badge { display: block; height: var(--badge); line-height: 0; }
+.badge img { height: 100%; width: auto; max-width: none; }
+.badge.google-play { width: calc(var(--badge) * 566 / 168); height: calc(var(--badge) * 170 / 168); overflow: hidden; }
+.badge.google-play img { height: calc(var(--badge) * 250 / 168); margin: calc(var(--badge) * -40 / 168); }
 .store.soon { background: transparent; color: var(--green); border: 1.5px solid var(--green); }
 
 /* Home: the app list */
@@ -95,7 +104,7 @@ hr { border: 0; border-top: 1px solid var(--line); margin: 2.5em 0; }
 .card { display: flex; gap: 22px; padding: 24px; border-radius: 22px; background: var(--surface);
   border: 1px solid var(--line); color: var(--text); text-decoration: none; transition: border-color .15s, transform .15s; }
 .card:hover { border-color: var(--green-deep); transform: translateY(-2px); color: var(--text); }
-.card img { width: 96px; height: 96px; border-radius: 22px; flex: none; }
+.card > img { width: 96px; height: 96px; border-radius: 22px; flex: none; }
 .card h3 { margin: 0; font-size: 1.4rem; }
 .card .tag { font-size: 1rem; margin-bottom: 10px; }
 .card p { color: #CBD2D5; }

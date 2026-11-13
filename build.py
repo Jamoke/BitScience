@@ -161,7 +161,7 @@ def phone(src_uri, width):
     """A screenshot in a phone frame. The rim is lighter than the bezel, so the phone holds its
     edge against the dark page."""
     bezel, radius = width * 0.032, width * 0.135
-    return (f'<div style="width:{width}px;padding:{bezel:.1f}px;border-radius:{radius:.1f}px;'
+    return (f'<div style="box-sizing:border-box;width:{width}px;padding:{bezel:.1f}px;border-radius:{radius:.1f}px;'
             f'background:#0F1112;box-shadow:0 {width * .05:.0f}px {width * .12:.0f}px rgba(0,0,0,.55),'
             f'inset 0 0 0 {max(1.5, width * .006):.1f}px #4A5257"><img src="{src_uri}" style="display:block;'
             f'width:{width - bezel * 2:.1f}px;border-radius:{radius - bezel:.1f}px"></div>')
@@ -285,27 +285,30 @@ def page(title, description, body, path, social="/images/social.png", page_class
 <div>{svg_file("bit-science-wordmark.svg", 18)}</div>
 <nav><a href="/#apps">Apps</a><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a>
 <a href="mailto:{SITE['email']}">{SITE['email']}</a></nav>
-<p class="fine">&copy; {year} {SITE['owner']}. Apple, iPhone, iPad and App Store are trademarks of Apple Inc. Google Play and Android are trademarks of Google LLC.</p>
+<p class="fine">&copy; {year} {SITE['owner']}. Apple, the Apple logo, iPhone and iPad are trademarks of Apple Inc., registered in the U.S. and other countries. App Store is a service mark of Apple Inc. Google Play, the Google Play logo and Android are trademarks of Google LLC.</p>
 </div></footer>
 </body>
 </html>
 """
 
 
-STORES = (("app_store_url", "Available on the App Store"), ("play_store_url", "Available on Google Play"))
+# The stores' own badges, as Apple and Google supply them (assets/badges/, unaltered).
+STORES = (("app_store_url", "app-store", "/assets/badges/app-store.svg", "Download on the App Store"),
+          ("play_store_url", "google-play", "/assets/badges/google-play.png", "Get it on Google Play"))
 
 
 def store_buttons(app, links=True):
-    """A button for each store the app is in, and `status` (such as "Coming soon to the App Store")
+    """A badge for each store the app is in, and `status` (such as "Coming soon to the App Store")
     while it is not yet in the App Store. On the home page the whole card is already a link, so
-    the buttons there are labels (`links=False`)."""
+    the badges there are pictures, not links (`links=False`)."""
     out = []
-    for key, label in STORES:
+    for key, name, src, label in STORES:
         url = app.get(key)
+        badge = f'<img src="{src}" alt="{label}">'
         if url and links:
-            out.append(f'<a class="store" href="{html.escape(url)}" rel="noopener">{label}</a>')
+            out.append(f'<a class="badge {name}" href="{html.escape(url)}" rel="noopener">{badge}</a>')
         elif url:
-            out.append(f'<span class="store">{label}</span>')
+            out.append(f'<span class="badge {name}">{badge}</span>')
         elif key == "app_store_url":
             out.append(f'<span class="store soon">{html.escape(app.get("status") or "Coming soon")}</span>')
     return f'<div class="stores">{"".join(out)}</div>'
