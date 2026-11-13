@@ -84,7 +84,8 @@ hr { border: 0; border-top: 1px solid var(--line); margin: 2.5em 0; }
 .app-hero p { color: #D7DDE0; font-size: 1.15rem; }
 .jump { font-size: .95rem; margin-top: 18px; }
 
-.store { display: inline-block; margin-top: 8px; padding: 10px 18px; border-radius: 12px; font-weight: 600;
+.stores { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 8px; }
+.store { display: inline-block; padding: 10px 18px; border-radius: 12px; font-weight: 600;
   background: var(--green); color: #12170E; text-decoration: none; }
 .store.soon { background: transparent; color: var(--green); border: 1.5px solid var(--green); }
 

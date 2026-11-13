@@ -41,8 +41,9 @@ that server, not as files.
 Each `## heading` on an app page becomes a section. A section with screenshots is laid out
 beside them, in phone frames; a `## Support` section is the page's support area.
 
-When an app goes live, set its `app_store_url` to show a download link in place of
-"Coming soon".
+When an app goes live, set its `app_store_url` (App Store) or `play_store_url` (Google Play) to
+show a link to that store. Until `app_store_url` is set, the page shows `status`, such as
+"Coming soon to the App Store".
 
 ## Keeping the policies true
 

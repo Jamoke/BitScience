@@ -34,7 +34,7 @@ CHROME = "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
 SITE = {
     "name": "Bit Science Games",
     "tagline": "Apps and games from bit science.",
-    "intro": "Small, carefully made apps for iPhone and iPad. No accounts, no ads, and no tracking.",
+    "intro": "Small, carefully made apps for iPhone, iPad and Android. No accounts, no ads, and no tracking.",
     "owner": "Jamoke Innovations LLC",
     "email": "support@jaredjudd.com",
     # The custom domain, such as "bitsciencegames.com". Set it to write docs/CNAME and give
@@ -285,18 +285,30 @@ def page(title, description, body, path, social="/images/social.png", page_class
 <div>{svg_file("bit-science-wordmark.svg", 18)}</div>
 <nav><a href="/#apps">Apps</a><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a>
 <a href="mailto:{SITE['email']}">{SITE['email']}</a></nav>
-<p class="fine">&copy; {year} {SITE['owner']}. Apple, iPhone and iPad are trademarks of Apple Inc.</p>
+<p class="fine">&copy; {year} {SITE['owner']}. Apple, iPhone, iPad and App Store are trademarks of Apple Inc. Google Play and Android are trademarks of Google LLC.</p>
 </div></footer>
 </body>
 </html>
 """
 
 
-def store_button(app):
-    if app.get("app_store_url"):
-        return (f'<a class="store" href="{html.escape(app["app_store_url"])}" rel="noopener">'
-                f'Download on the App Store</a>')
-    return f'<span class="store soon">{html.escape(app.get("status") or "Coming soon")}</span>'
+STORES = (("app_store_url", "Available on the App Store"), ("play_store_url", "Available on Google Play"))
+
+
+def store_buttons(app, links=True):
+    """A button for each store the app is in, and `status` (such as "Coming soon to the App Store")
+    while it is not yet in the App Store. On the home page the whole card is already a link, so
+    the buttons there are labels (`links=False`)."""
+    out = []
+    for key, label in STORES:
+        url = app.get(key)
+        if url and links:
+            out.append(f'<a class="store" href="{html.escape(url)}" rel="noopener">{label}</a>')
+        elif url:
+            out.append(f'<span class="store">{label}</span>')
+        elif key == "app_store_url":
+            out.append(f'<span class="store soon">{html.escape(app.get("status") or "Coming soon")}</span>')
+    return f'<div class="stores">{"".join(out)}</div>'
 
 
 def load_apps():
@@ -317,7 +329,7 @@ def home(apps):
 <a class="card" href="/{a['slug']}/">
 <img src="/images/{a['slug']}/icon.png" alt="" width="96" height="96">
 <div><h3>{html.escape(a['title'])}</h3><p class="tag">{html.escape(a['tagline'])}</p>
-<p>{html.escape(a['summary'])}</p>{store_button(a)}</div></a>""" for a in apps)
+<p>{html.escape(a['summary'])}</p>{store_buttons(a, links=False)}</div></a>""" for a in apps)
 
     body = f"""
 <section class="hero home-hero"><div class="wrap">
@@ -368,7 +380,7 @@ def app_page(app):
 <div class="app-lockup">{svg_file(app['mark'], 96)}<div><h1>{html.escape(app['title'])}</h1>
 <p class="tag">{html.escape(app['tagline'])}</p></div></div>
 {''.join(render_block(k, p, phones) for k, p in blocks(lead))}
-{store_button(app)}
+{store_buttons(app)}
 <p class="jump"><a href="#support">Support</a> · <a href="/privacy/#{slug(app['title'])}">Privacy</a></p>
 </div>
 <div class="art"><img src="/images/{slug_}/phones/{html.escape(app['hero'])}" alt="{html.escape(app['title'])} on iPhone"></div>
