@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="40.880 84.500 53.350 98.590" width="534" height="986"><g transform="matrix(1 0 0 -1 0 280)">
+  <defs>
+    <radialGradient id="hl" gradientUnits="userSpaceOnUse" cx="53.11" cy="130.71" r="22.28">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.38"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="hl2" gradientUnits="userSpaceOnUse" cx="53.39" cy="133.42" r="8.12">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <g id="pixels">
+    <path fill="#F97A2B" d="M67 188 h-7 v7 h7 Z"/>
+    <path fill="#9ACE51" d="M75 180 h-6 v6 h6 Z"/>
+    <path fill="#04BAF4" d="M65 178 h-4 v4 h4 Z"/>
+    <path fill="#F8A621" d="M70 173 h-3 v3 h3 Z"/>
+  </g>
+  <g id="flask" fill="#9ACE51">
+    <circle cx="67.556" cy="123.585" r="26.174"/>
+    <rect x="58.675" y="123.585" width="17.762" height="38.345"/>
+    <rect x="55.17" y="161.93" width="24.772" height="6.434" rx="3.217"/>
+  </g>
+  <g id="shade" style="mix-blend-mode:multiply">
+    <path transform="matrix(1 0 0 1 76.4366 148.2107)" fill="#C6C6C6" d="M0 0 L0 13.719 L-3.856 13.719 L-3.851 -0.618 C-3.851 -0.761 -3.791 -0.892 -3.684 -0.987 C-2.733 -1.834 1.97 -6.749 1.97 -21.1 C1.97 -34.096 -6.38 -45.135 -18.005 -49.163 C-14.282 -50.549 -10.16 -51.115 -5.854 -50.63 C6.748 -49.209 16.641 -38.611 17.262 -25.944 C17.845 -14.041 10.473 -3.777 0 0"/>
+    <path transform="matrix(1 0 0 1 76.4366 161.9298)" fill="#DADADA" d="M0 0 L-3.856 0 L-3.856 -1.788 L0 -1.788 Z"/>
+    <path transform="matrix(1 0 0 1 76.7251 168.364)" fill="#C6C6C6" d="M0 0 L-5.236 0 C-4.99 -0.794 -4.857 -1.639 -4.857 -2.514 C-4.857 -3.929 -5.208 -5.261 -5.822 -6.434 L-5.821 -6.434 L-0.289 -6.434 L-0.095 -6.434 C1.306 -6.434 2.635 -5.591 3.055 -4.255 C3.751 -2.038 2.113 0 0 0"/>
+  </g>
+  <circle cx="67.556" cy="123.585" r="26.174" fill="url(#hl)"/>
+  <circle cx="67.556" cy="123.585" r="26.174" fill="url(#hl2)"/>
+  
+  <defs>
+    <radialGradient id="mdial" gradientUnits="userSpaceOnUse" cx="67.556" cy="123.585" r="20.677">
+      <stop offset="0" stop-color="#3B4044"/>
+      <stop offset="1" stop-color="#1C1F21"/>
+    </radialGradient>
+    <radialGradient id="mvig" gradientUnits="userSpaceOnUse" cx="67.556" cy="123.585" r="20.677">
+      <stop offset="0.55" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="1" stop-color="#000000" stop-opacity="0.38"/>
+    </radialGradient>
+    <clipPath id="mfield"><circle cx="67.556" cy="123.585" r="20.677"/></clipPath>
+  </defs>
+  <g clip-path="url(#mfield)">
+    <circle cx="67.556" cy="123.585" r="20.677" fill="url(#mdial)"/>
+    <path stroke="#F5C518" stroke-width="3.265" d="M57.108 102.908V144.262M61.462 102.908V144.262"/>
+    <path stroke="#F2F4F5" stroke-opacity="0.45" stroke-width="1.088"
+          stroke-dasharray="3.809 4.897" d="M75.827 102.908V144.262"/>
+    <g fill="none">
+      <path stroke="#F5C518" stroke-opacity="0.7" stroke-width="0.490" d=""/>
+      <path stroke="#F5C518" stroke-opacity="0.85" stroke-width="0.762" d="M85.321 128.345L87.003 128.796M83.484 132.781L84.992 133.652M76.752 139.513L77.623 141.021M72.316 141.350L72.767 143.032M62.796 141.350L62.345 143.032M58.360 139.513L57.489 141.021M51.628 132.781L50.120 133.652M49.791 128.345L48.109 128.796M49.791 118.825L48.109 118.374M51.628 114.389L50.120 113.518M58.360 107.657L57.489 106.149M62.796 105.820L62.345 104.138M72.316 105.820L72.767 104.138M76.752 107.657L77.623 106.149M83.484 114.389L84.992 113.518M85.321 118.825L87.003 118.374"/>
+      <path stroke="#F5C518" stroke-width="0.979" d="M80.022 136.051L81.792 137.821M55.090 136.051L53.320 137.821M55.090 111.119L53.320 109.349M80.022 111.119L81.792 109.349"/>
+      <path stroke="#FFFFFF" stroke-width="1.415" d="M84.316 123.585L87.689 123.585M67.556 140.345L67.556 143.718M50.796 123.585L47.423 123.585M67.556 106.825L67.556 103.452"/>
+    </g>
+    <circle cx="67.556" cy="123.585" r="20.677" fill="url(#mvig)"/>
+    <path fill="none" stroke="#FFFFFF" stroke-width="1.2" stroke-opacity="0.18" stroke-linecap="round" d="M61.204 139.306 A16.956 16.956 0 0 1 51.623 129.384"/>
+  </g></g></svg>

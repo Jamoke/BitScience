@@ -4,7 +4,7 @@ description: How Bit Science Games apps and this website handle your information
 ---
 # Privacy Policy
 
-**Effective November 12, 2026**
+**Effective November 13, 2026**
 
 Bit Science Games apps are published by Jamoke Innovations LLC ("we", "us"). This policy covers those apps and this website. The first part applies to every app. Below it, each app has a section describing exactly what that app does, and that section takes precedence where it says more.
 
@@ -47,6 +47,16 @@ If you email us, we use your message and address only to reply to you.
 **Maps.** When you choose your shooting position on a map, the map on iPhone and iPad is Apple Maps, provided by Apple under [Apple's privacy policy](https://www.apple.com/legal/privacy/). On Android, the map is provided by Mapbox (mapbox.com). While the map is open, the app loads Mapbox's map software and map images over an encrypted connection (HTTPS), so Mapbox receives the area of the map being shown, your device's IP address, and usage information that its map software sends to count map loads. Mapbox handles it under the [Mapbox privacy policy](https://www.mapbox.com/legal/privacy).
 
 **Tilt and compass.** The app reads your device's tilt (for the look angle) and compass (for the direction you are facing) when you tap the buttons for them. These readings are used on your device for the calculation and are not sent anywhere or saved.
+
+### Civil Calcs
+
+**On your device.** Civil Calcs saves the values you enter in each calculator, your traverse sites, area figures and traffic counts (with the time of each vehicle counted), and your display preferences. They are not sent anywhere.
+
+**No network and no permissions.** Civil Calcs makes no internet connections and asks for no permissions: it does not use your location, camera, contacts or any other information on your device.
+
+**Exports.** When you export a table, points or a count, the app hands the CSV file to your device's save sheet, and it goes only where you choose to save it.
+
+**Links.** The Website and Privacy Policy keys in Settings open this website in your browser, which handles the visit as described under "This website" above.
 
 ## Children
 

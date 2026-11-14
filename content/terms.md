@@ -4,7 +4,7 @@ description: The terms for using Bit Science Games apps and this website.
 ---
 # Terms of Use
 
-**Effective November 11, 2026**
+**Effective November 13, 2026**
 
 These terms apply to the apps published by Jamoke Innovations LLC ("we", "us") as Bit Science Games, and to this website. By downloading or using one of our apps, you agree to them. The first part applies to every app. Below it, each app may have terms of its own, which apply in addition.
 
@@ -64,3 +64,16 @@ Jamoke Innovations LLC, Texas
 - You are responsible for following all laws and rules that apply to you, including firearm, hunting and range regulations.
 
 **Liability.** Without limiting section 4, we are not liable for any shot taken, missed or otherwise affected by the app's results.
+
+### Civil Calcs
+
+**What it is.** Civil Calcs is a calculator. It works out hydraulic, roadway, survey and traffic quantities from the information you enter, using standard engineering methods. Its results are calculations, not designs, surveys or measurements, and they are only as good as the information they are based on.
+
+**Your responsibility.**
+
+- Check every result against the standards, codes and methods that apply to your project before you rely on it.
+- Civil Calcs does not replace the judgment of a licensed professional engineer or surveyor. Designs, plans and surveys that require one must be prepared or reviewed by one.
+- An area or closure computed from coordinates is not a boundary survey, and does not establish property lines.
+
+**Liability.** Without limiting section 4, we are not liable for any design, construction, survey, count or decision based on the app's results.
+
